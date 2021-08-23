@@ -7,7 +7,7 @@ class Grub {
   }
 
   eat(){
-    return 'Mmmmmmmmm jelly';
+    return 'Mmmmmmmmm '+ `${this.food}`;
   }
 }
 

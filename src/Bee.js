@@ -9,10 +9,6 @@ class Bee extends Grub {
     this.job = 'Keep on growing';
   }
   
-  eat(){
-    return Grub.eat();
-  }
-
 }
 
 module.exports = Bee;
