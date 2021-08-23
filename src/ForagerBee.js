@@ -1,20 +1,17 @@
 const Bee = require('./Bee');
 
-let bee = new Bee();
-
-class ForagerBee {
+class ForagerBee extends Bee {
   // TODO..
   constructor(age, job, color, food, canFly, treasureChest){
+    super();
     this.age = 10;
     this.job = 'find pollen';
-    this.color = bee.color;
-    this.food = bee.food;
     this.canFly = true;
     this.treasureChest = [];
   }
 
   eat (){
-    return bee.eat();
+    return Bee.eat();
   }
 
   forage(str) {

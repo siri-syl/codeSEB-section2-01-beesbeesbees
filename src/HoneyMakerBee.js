@@ -1,19 +1,16 @@
 const Bee = require('./Bee');
 
-let bee = new Bee();
-
-class HoneyMakerBee {
+class HoneyMakerBee extends Bee {
   // TODO..
   constructor(age, job, color, food, honeyPot){
+    super();
     this.age = 10;
     this.job = 'make honey';
-    this.color = bee.color;
-    this.food = bee.food;
     this.honeyPot = 0;
   }
 
   eat (){
-    return bee.eat();
+    return Bee.eat();
   }
 
   makeHoney(){
